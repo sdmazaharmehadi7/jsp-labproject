@@ -10,9 +10,16 @@
         return;
     }
 
-    session.removeAttribute("user");
-    session.removeAttribute("username");
-    session.invalidate();
+    HttpSession currentSession = request.getSession(false);
+    if (currentSession != null) {
+        try {
+            currentSession.removeAttribute("user");
+            currentSession.removeAttribute("username");
+            currentSession.invalidate();
+        } catch (IllegalStateException ignored) {
+            // Session already invalidated
+        }
+    }
 
     JsonUtil.sendJson(response, HttpServletResponse.SC_OK, "{\"success\":true,\"message\":\"Logged out successfully\"}");
 %>

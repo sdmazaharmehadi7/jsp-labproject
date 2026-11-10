@@ -10,7 +10,7 @@
 </head>
 <body data-context-path="<%= request.getContextPath() %>">
 
- 
+    <%@ include file="includes/navbar.jsp" %>
 
     <main class="main-wrapper">
         <section class="hero-section">

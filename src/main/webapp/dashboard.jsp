@@ -378,6 +378,15 @@
             window.location.href = CTX + '/pad.jsp?path=' + encodeURIComponent(path);
         }
 
+        async function handleLogout() {
+            try {
+                await fetch(CTX + '/api/auth/logout.jsp', { method: 'POST' });
+                window.location.href = CTX + '/';
+            } catch (e) {
+                window.location.reload();
+            }
+        }
+
         window.addEventListener('DOMContentLoaded', loadUserPads);
     </script>
 </body>
