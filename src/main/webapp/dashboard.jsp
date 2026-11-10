@@ -158,7 +158,7 @@
 </head>
 <body data-context-path="<%= request.getContextPath() %>" data-username="<%= currentUsername %>">
 
-    <%@ include file="includes/navbar.jsp" %>
+
 
     <main class="main-wrapper">
         <div class="dashboard-container">
@@ -253,9 +253,7 @@
         </div>
     </div>
 
-    <%@ include file="includes/footer.jsp" %>
-
-    <script>
+<script>
         const CTX = document.body.dataset.contextPath || '';
         const USERNAME = document.body.dataset.username || '';
         let allPads = [];

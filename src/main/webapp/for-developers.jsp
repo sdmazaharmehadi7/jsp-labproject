@@ -27,7 +27,7 @@
 </head>
 <body>
 
-    <%@ include file="includes/navbar.jsp" %>
+
 
     <main class="main-wrapper">
         <div class="dev-container">
@@ -55,7 +55,7 @@
         </div>
     </main>
 
-    <%@ include file="includes/footer.jsp" %>
+    
 
 </body>
 </html>

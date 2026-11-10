@@ -10,7 +10,7 @@
 </head>
 <body data-context-path="<%= request.getContextPath() %>">
 
-    <%@ include file="includes/navbar.jsp" %>
+ 
 
     <main class="main-wrapper">
         <section class="hero-section">
@@ -92,7 +92,7 @@
         </section>
     </main>
 
-    <%@ include file="includes/footer.jsp" %>
+
 
     <script>
         const CTX = document.body.dataset.contextPath || '';

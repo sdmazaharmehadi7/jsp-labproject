@@ -62,7 +62,7 @@
 </head>
 <body>
 
-    <%@ include file="includes/navbar.jsp" %>
+
 
     <main class="main-wrapper">
         <section class="feature-hero">
@@ -126,7 +126,7 @@
         </section>
     </main>
 
-    <%@ include file="includes/footer.jsp" %>
+    
 
 </body>
 </html>
